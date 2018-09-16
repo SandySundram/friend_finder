@@ -1,5 +1,5 @@
 html, body, main {
-    height: 700px;
+    height: 870px;
     width: 100%;
     /* background-image: url(../imgs/topography.png); */
     /* overflow: hidden; */
@@ -25,10 +25,68 @@ html, body, main {
     /* position: fixed; */
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
 .question{
-    margin: 5px;
+    margin: 10px;
 }
 #signup-btn{
-    margin-left: 45%;
+    margin-left: 10%;
+    margin-top: 10px;
+    width: 80%;
+    border: 0.5px solid rgb(0, 0, 0);
+    color: black;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+#questionContainer{
+    width: 90%;
+    height: auto;
+    background-color: rgba(177, 177, 179, 0.61);
+    padding: 10px;
+    margin: auto;
+    border: solid black 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+label{
+    margin: auto;
+}
+#errMessage{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: red;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    border-radius: 5px;
+    height: 20px;
+    padding-top: 1px;
+}
+#resultMessage{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: black;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+    border-radius: 5px;
+    height: auto;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+#homeLink{
+    float: left;
+    margin-left: 1%;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+#pageTitle{
+    margin-left: 0%;
+    width: 95%;
 }
