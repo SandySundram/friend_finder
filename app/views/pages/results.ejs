@@ -3,14 +3,24 @@
 <head>
 	<% include ../partials/head %>
 </head>
-<body id="index-body">
+<body id="index-body-results">
 
 	<header>
 		<% include ../partials/header %>
 	</header>
 	
-	<main id="index-main">
-        <div id="resultMessage">Hi <%= userName %>,<br> your match is <br><%= matchName %></div>
+	<main id="index-main-results">
+		<div id="resultMessage">Hi <span class="bold"><%= userName %></span>,<br> <span id="small">your match is</span> <br><span class="bold"><%= matchName %></span></div>
+		<div>
+			<div id="userResults">
+				<p><%= userName %></p>
+				<img id="userPhoto" src="/assets/images/<%= userPhoto %>" alt="">
+			</div>
+			<div id="matchResults">
+				<p><%= matchName %></p>
+				<img id="matchPhoto" src="/assets/images/<%= matchPhoto %>" alt="">
+			</div>
+		</div>
 	</main>
 	<footer>
 		<% include ../partials/footer %>

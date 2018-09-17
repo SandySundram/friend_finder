@@ -15,76 +15,87 @@
         <% } else {%>
             <div id="errMessage"><%= error %></div>
         <% } %>
-        <form method="POST" action="/send-answers">   
+        <form method="POST" action="/send-answers" encType="multipart/form-data">   
             <div id="questionContainer">
-            
-                <label for="full_name">Full Name</label><br>
-                <input type="text" name="full_name" required id="full_name">
-                <p class="question">Question 1</p>
-                <input type="radio" name="question1" value="1" required id="SA1"><label for="SA1">Strongly Agree</label>
-                <input type="radio" name="question1" value="2" required id="A1"><label for="A1">Agree</label>
-                <input type="radio" name="question1" value="3" required id="N1"><label for="N1">Neutral</label>
-                <input type="radio" name="question1" value="4" required id="D1"><label for="D1">Disagree</label>
-                <input type="radio" name="question1" value="5" required id="SD1"><label for="SD1">Strongly Disagree</label><br><br>
-                <p class="question">Question 2</p>
-                <input type="radio" name="question2" value="1" required id="SA2"><label for="SA2">Strongly Agree</label>
-                <input type="radio" name="question2" value="2" required id="A2"><label for="A2">Agree</label>
-                <input type="radio" name="question2" value="3" required id="N2"><label for="N2">Neutral</label>
-                <input type="radio" name="question2" value="4" required id="D2"><label for="D2">Disagree</label>
-                <input type="radio" name="question2" value="5" required id="SD2"><label for="SD2">Strongly Disagree</label><br><br>
-                <p class="question">Question 3</p>
-                <input type="radio" name="question3" value="1" required id="SA3"><label for="SA3">Strongly Agree</label>
-                <input type="radio" name="question3" value="2" required id="A3"><label for="A3">Agree</label>
-                <input type="radio" name="question3" value="3" required id="N3"><label for="N3">Neutral</label>
-                <input type="radio" name="question3" value="4" required id="D3"><label for="D3">Disagree</label>
-                <input type="radio" name="question3" value="5" required id="SD3"><label for="SD3">Strongly Disagree</label><br><br>
-                <p class="question">Question 4</p>
-                <input type="radio" name="question4" value="1" required id="SA4"><label for="SA4">Strongly Agree</label>
-                <input type="radio" name="question4" value="2" required id="A4"><label for="A4">Agree</label>
-                <input type="radio" name="question4" value="3" required id="N4"><label for="N4">Neutral</label>
-                <input type="radio" name="question4" value="4" required id="D4"><label for="D4">Disagree</label>
-                <input type="radio" name="question4" value="5" required id="SD4"><label for="SD4">Strongly Disagree</label><br><br>
-                <p class="question">Question 5</p>
-                <input type="radio" name="question5" value="1" required id="SA5"><label for="SA5">Strongly Agree</label>
-                <input type="radio" name="question5" value="2" required id="A5"><label for="A5">Agree</label>
-                <input type="radio" name="question5" value="3" required id="N5"><label for="N5">Neutral</label>
-                <input type="radio" name="question5" value="4" required id="D5"><label for="D5">Disagree</label>
-                <input type="radio" name="question5" value="5" required id="SD5"><label for="SD5">Strongly Disagree</label><br><br>
-                <p class="question">Question 6</p>
-                <input type="radio" name="question6" value="1" required id="SA6"><label for="SA6">Strongly Agree</label>
-                <input type="radio" name="question6" value="2" required id="A6"><label for="A6">Agree</label>
-                <input type="radio" name="question6" value="3" required id="N6"><label for="N6">Neutral</label>
-                <input type="radio" name="question6" value="4" required id="D6"><label for="D6">Disagree</label>
-                <input type="radio" name="question6" value="5" required id="SD6"><label for="SD6">Strongly Disagree</label><br><br>
-                <p class="question">Question 7</p>
-                <input type="radio" name="question7" value="1" required id="SA7"><label for="SA7">Strongly Agree</label>
-                <input type="radio" name="question7" value="2" required id="A7"><label for="A7">Agree</label>
-                <input type="radio" name="question7" value="3" required id="N7"><label for="N7">Neutral</label>
-                <input type="radio" name="question7" value="4" required id="D7"><label for="D7">Disagree</label>
-                <input type="radio" name="question7" value="5" required id="SD7"><label for="SD7">Strongly Disagree</label><br><br>
-                <p class="question">Question 8</p>
-                <input type="radio" name="question8" value="1" required id="SA8"><label for="SA8">Strongly Agree</label>
-                <input type="radio" name="question8" value="2" required id="A8"><label for="A8">Agree</label>
-                <input type="radio" name="question8" value="3" required id="N8"><label for="N8">Neutral</label>
-                <input type="radio" name="question8" value="4" required id="D8"><label for="D8">Disagree</label>
-                <input type="radio" name="question8" value="5" required id="SD8"><label for="SD8">Strongly Disagree</label><br><br>
-                <p class="question">Question 9</p>
-                <input type="radio" name="question9" value="1" required id="SA9"><label for="SA9">Strongly Agree</label>
-                <input type="radio" name="question9" value="2" required id="A9"><label for="A9">Agree</label>
-                <input type="radio" name="question9" value="3" required id="N9"><label for="N9">Neutral</label>
-                <input type="radio" name="question9" value="4" required id="D9"><label for="D9">Disagree</label>
-                <input type="radio" name="question9" value="5" required id="SD9"><label for="SD9">Strongly Disagree</label><br><br>
-                <p class="question">Question 10</p>
-                <input type="radio" name="question10" value="1" required id="SA10"><label for="SA10">Strongly Agree</label>
-                <input type="radio" name="question10" value="2" required id="A10"><label for="A10">Agree</label>
-                <input type="radio" name="question10" value="3" required id="N10"><label for="N10">Neutral</label>
-                <input type="radio" name="question10" value="4" required id="D10"><label for="D10">Disagree</label>
-                <input type="radio" name="question10" value="5" required id="SD10"><label for="SD10">Strongly Disagree</label><br><br>
-                
+                <div id="profile-container">
+                    <div id="photo-container">
 
+                        <label id="edit-profile-pic" for="pic-upload">
+                                Picture (required)<img src="/assets/images/placeholder-image10.jpg" alt="Placeholder Pic" class="rounded" id="placeholder-pic">
+                        </label>
+                        <input type="file" name="photourl" class="form-control" id="pic-upload" accept="image/*" required>
+                    </div>
+                    <div id="name-container">
+                        <label for="full_name">Full Name (required)</label><br>
+                        <input type="text" name="full_name" required id="full_name" maxlength="100">
+                    </div>
+                </div>
+                <div id="question-container">
+                    <p class="question1">Your mind is always buzzing with unexplored ideas and plans?</p>
+                    <input type="radio" name="question1" value="1" required id="SA1"><label for="SA1">Strongly Agree</label>
+                    <input type="radio" name="question1" value="2" required id="A1"><label for="A1">Agree</label>
+                    <input type="radio" name="question1" value="3" required id="N1"><label for="N1">Neutral</label>
+                    <input type="radio" name="question1" value="4" required id="D1"><label for="D1">Disagree</label>
+                    <input type="radio" name="question1" value="5" required id="SD1"><label for="SD1">Strongly Disagree</label><br><br>
+                    <p class="question">Generally speaking, you rely more on your experience than your imagination?</p>
+                    <input type="radio" name="question2" value="1" required id="SA2"><label for="SA2">Strongly Agree</label>
+                    <input type="radio" name="question2" value="2" required id="A2"><label for="A2">Agree</label>
+                    <input type="radio" name="question2" value="3" required id="N2"><label for="N2">Neutral</label>
+                    <input type="radio" name="question2" value="4" required id="D2"><label for="D2">Disagree</label>
+                    <input type="radio" name="question2" value="5" required id="SD2"><label for="SD2">Strongly Disagree</label><br><br>
+                    <p class="question">You find it easy to stay relaxed and focused even when there is some pressure?</p>
+                    <input type="radio" name="question3" value="1" required id="SA3"><label for="SA3">Strongly Agree</label>
+                    <input type="radio" name="question3" value="2" required id="A3"><label for="A3">Agree</label>
+                    <input type="radio" name="question3" value="3" required id="N3"><label for="N3">Neutral</label>
+                    <input type="radio" name="question3" value="4" required id="D3"><label for="D3">Disagree</label>
+                    <input type="radio" name="question3" value="5" required id="SD3"><label for="SD3">Strongly Disagree</label><br><br>
+                    <p class="question">You rarely do something just out of sheer curiosity?</p>
+                    <input type="radio" name="question4" value="1" required id="SA4"><label for="SA4">Strongly Agree</label>
+                    <input type="radio" name="question4" value="2" required id="A4"><label for="A4">Agree</label>
+                    <input type="radio" name="question4" value="3" required id="N4"><label for="N4">Neutral</label>
+                    <input type="radio" name="question4" value="4" required id="D4"><label for="D4">Disagree</label>
+                    <input type="radio" name="question4" value="5" required id="SD4"><label for="SD4">Strongly Disagree</label><br><br>
+                    <p class="question">People can rarely upset you?</p>
+                    <input type="radio" name="question5" value="1" required id="SA5"><label for="SA5">Strongly Agree</label>
+                    <input type="radio" name="question5" value="2" required id="A5"><label for="A5">Agree</label>
+                    <input type="radio" name="question5" value="3" required id="N5"><label for="N5">Neutral</label>
+                    <input type="radio" name="question5" value="4" required id="D5"><label for="D5">Disagree</label>
+                    <input type="radio" name="question5" value="5" required id="SD5"><label for="SD5">Strongly Disagree</label><br><br>
+                    <p class="question">It is often difficult for you to relate to other people’s feelings?</p>
+                    <input type="radio" name="question6" value="1" required id="SA6"><label for="SA6">Strongly Agree</label>
+                    <input type="radio" name="question6" value="2" required id="A6"><label for="A6">Agree</label>
+                    <input type="radio" name="question6" value="3" required id="N6"><label for="N6">Neutral</label>
+                    <input type="radio" name="question6" value="4" required id="D6"><label for="D6">Disagree</label>
+                    <input type="radio" name="question6" value="5" required id="SD6"><label for="SD6">Strongly Disagree</label><br><br>
+                    <p class="question">In a discussion, truth should be more important than people’s sensitivities?</p>
+                    <input type="radio" name="question7" value="1" required id="SA7"><label for="SA7">Strongly Agree</label>
+                    <input type="radio" name="question7" value="2" required id="A7"><label for="A7">Agree</label>
+                    <input type="radio" name="question7" value="3" required id="N7"><label for="N7">Neutral</label>
+                    <input type="radio" name="question7" value="4" required id="D7"><label for="D7">Disagree</label>
+                    <input type="radio" name="question7" value="5" required id="SD7"><label for="SD7">Strongly Disagree</label><br><br>
+                    <p class="question">You rarely get carried away by fantasies and ideas?</p>
+                    <input type="radio" name="question8" value="1" required id="SA8"><label for="SA8">Strongly Agree</label>
+                    <input type="radio" name="question8" value="2" required id="A8"><label for="A8">Agree</label>
+                    <input type="radio" name="question8" value="3" required id="N8"><label for="N8">Neutral</label>
+                    <input type="radio" name="question8" value="4" required id="D8"><label for="D8">Disagree</label>
+                    <input type="radio" name="question8" value="5" required id="SD8"><label for="SD8">Strongly Disagree</label><br><br>
+                    <p class="question">You think that everyone’s views should be respected regardless of whether they are supported by facts or not?</p>
+                    <input type="radio" name="question9" value="1" required id="SA9"><label for="SA9">Strongly Agree</label>
+                    <input type="radio" name="question9" value="2" required id="A9"><label for="A9">Agree</label>
+                    <input type="radio" name="question9" value="3" required id="N9"><label for="N9">Neutral</label>
+                    <input type="radio" name="question9" value="4" required id="D9"><label for="D9">Disagree</label>
+                    <input type="radio" name="question9" value="5" required id="SD9"><label for="SD9">Strongly Disagree</label><br><br>
+                    <p class="question">You feel more energetic after spending time with a group of people?</p>
+                    <input type="radio" name="question10" value="1" required id="SA10"><label for="SA10">Strongly Agree</label>
+                    <input type="radio" name="question10" value="2" required id="A10"><label for="A10">Agree</label>
+                    <input type="radio" name="question10" value="3" required id="N10"><label for="N10">Neutral</label>
+                    <input type="radio" name="question10" value="4" required id="D10"><label for="D10">Disagree</label>
+                    <input type="radio" name="question10" value="5" required id="SD10"><label for="SD10">Strongly Disagree</label><br><br>
+                </div>
+                <button class="btn btn-warning" id="signup-btn" type="submit">Check your match!</button>
             </div>
 
-            <button class="btn btn-outline-warning" id="signup-btn" type="submit">Check your match!</button>
+            
         </form>
 	</main>
 	<!-- https://tayloraanenson.github.io/star-wars-rpg/ -->

@@ -15,8 +15,9 @@ CREATE TABLE users (
   question8 INT NOT NULL,
   question9 INT NOT NULL,
   question10 INT NOT NULL,
+  photourl VARCHAR (255),
   PRIMARY KEY (id)
 );
 
-INSERT INTO users (full_name,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10)
-VALUES ('Sandy',1,3,2,5,3,2,2,4,5,3);
+INSERT INTO users (full_name,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,photourl)
+VALUES ('John',1,3,2,5,3,2,2,4,5,3,'John.jpeg');
