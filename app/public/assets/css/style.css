@@ -1,5 +1,5 @@
 body, main {
-    height: 970px;
+    height: 1000px;
     width: 100%;
     font-family: 'Kosugi Maru', sans-serif;
 }
@@ -58,7 +58,7 @@ body, main {
     width: 19%;
     float: left;
     height: 300px;
-    background-color: #f8f9fadb;
+    background-color: #ffc107d9;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
     border-radius: 2px;
 }
@@ -76,7 +76,7 @@ body, main {
     width: 80%;
     float: left;
     margin-left: 1%;
-    background-color: #f8f9fadb;
+    background-color: #f8f9faf2;
     border-radius: 2px;
     box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
